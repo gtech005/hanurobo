@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<robot name = "hanuspot"  xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <link name = "hanubase">
+        <visual>
+            <geometry>
+                <cylinder length="0.1" radius="0.05"/>
+            </geometry>
+        </visual>
+    </link>
+    <xacro:include filename="$(find champ_description)/urdf/champhanu.urdf.xacro"/>
+    
+    <xacro:include filename="$(find reachy_description)/reachyhanu.URDF.xacro"/>
+
+   
+
+</robot> 
